@@ -1,0 +1,843 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A20012C82C4D3F2A0091A255 /* SmartBagStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20012C72C4D3F2A0091A255 /* SmartBagStatusView.swift */; };
+		A20012CA2C4D3F3D0091A255 /* MyMedicationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20012C92C4D3F3D0091A255 /* MyMedicationsView.swift */; };
+		A20012CC2C4D43E20091A255 /* SmartBagStatusPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20012CB2C4D43E20091A255 /* SmartBagStatusPresenter.swift */; };
+		A20012CF2C4D44EA0091A255 /* SmartBagStatusViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20012CE2C4D44EA0091A255 /* SmartBagStatusViewModel.swift */; };
+		A20012D32C4DA7000091A255 /* SetupMedicationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20012D22C4DA7000091A255 /* SetupMedicationView.swift */; };
+		A20012D52C4DA7160091A255 /* SetupMedicationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20012D42C4DA7160091A255 /* SetupMedicationPresenter.swift */; };
+		A2389DA12C21028400B896C8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A2389DA02C21028400B896C8 /* GoogleService-Info.plist */; };
+		A2393ACE2C4410E00087DDAD /* MQTTBrokerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2393ACD2C4410E00087DDAD /* MQTTBrokerManager.swift */; };
+		A2393AD12C4412F70087DDAD /* LoggerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2393AD02C4412F70087DDAD /* LoggerHelper.swift */; };
+		A25250F52C05C7E1000D935F /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25250F42C05C7E1000D935F /* Package.swift */; };
+		A26492AF2BD6E8C400E3D91E /* SmartBagAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26492AE2BD6E8C400E3D91E /* SmartBagAppApp.swift */; };
+		A26492B12BD6E8C400E3D91E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26492B02BD6E8C400E3D91E /* ContentView.swift */; };
+		A26492B32BD6E8C400E3D91E /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26492B22BD6E8C400E3D91E /* Item.swift */; };
+		A26492B52BD6E8C600E3D91E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A26492B42BD6E8C600E3D91E /* Assets.xcassets */; };
+		A26492B82BD6E8C600E3D91E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A26492B72BD6E8C600E3D91E /* Preview Assets.xcassets */; };
+		A26492C22BD6E8C600E3D91E /* SmartBagAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26492C12BD6E8C600E3D91E /* SmartBagAppTests.swift */; };
+		A26492CC2BD6E8C600E3D91E /* SmartBagAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26492CB2BD6E8C600E3D91E /* SmartBagAppUITests.swift */; };
+		A26492CE2BD6E8C600E3D91E /* SmartBagAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26492CD2BD6E8C600E3D91E /* SmartBagAppUITestsLaunchTests.swift */; };
+		A26492DC2BD6EC5100E3D91E /* MedicationNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26492DB2BD6EC5100E3D91E /* MedicationNameView.swift */; };
+		A26492DE2BD6F43900E3D91E /* MedicationTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26492DD2BD6F43900E3D91E /* MedicationTypeView.swift */; };
+		A26492E02BD7036B00E3D91E /* MedicationStrengthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26492DF2BD7036B00E3D91E /* MedicationStrengthView.swift */; };
+		A26492E22BD709D800E3D91E /* MedicationScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26492E12BD709D800E3D91E /* MedicationScheduleView.swift */; };
+		A293186F2C59254900069251 /* MyMedicationsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A293186E2C59254900069251 /* MyMedicationsPresenter.swift */; };
+		A2B0674D2BE7D50B00F4FC8A /* Medication.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B0674C2BE7D50B00F4FC8A /* Medication.swift */; };
+		FA58CC95B9786BF193BE3623 /* Pods_SmartBagApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2E9E4652C21108F00A94265 /* Pods_SmartBagApp.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A26492BE2BD6E8C600E3D91E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A26492A32BD6E8C400E3D91E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A26492AA2BD6E8C400E3D91E;
+			remoteInfo = SmartBagApp;
+		};
+		A26492C82BD6E8C600E3D91E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A26492A32BD6E8C400E3D91E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A26492AA2BD6E8C400E3D91E;
+			remoteInfo = SmartBagApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		888297AAB3A6C6371698F670 /* Pods_SmartBagApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartBagApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A20012C72C4D3F2A0091A255 /* SmartBagStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartBagStatusView.swift; sourceTree = "<group>"; };
+		A20012C92C4D3F3D0091A255 /* MyMedicationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMedicationsView.swift; sourceTree = "<group>"; };
+		A20012CB2C4D43E20091A255 /* SmartBagStatusPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartBagStatusPresenter.swift; sourceTree = "<group>"; };
+		A20012CE2C4D44EA0091A255 /* SmartBagStatusViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartBagStatusViewModel.swift; sourceTree = "<group>"; };
+		A20012D22C4DA7000091A255 /* SetupMedicationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupMedicationView.swift; sourceTree = "<group>"; };
+		A20012D42C4DA7160091A255 /* SetupMedicationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupMedicationPresenter.swift; sourceTree = "<group>"; };
+		A2389D9F2C21021200B896C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		A2389DA02C21028400B896C8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A2393ACD2C4410E00087DDAD /* MQTTBrokerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MQTTBrokerManager.swift; sourceTree = "<group>"; };
+		A2393AD02C4412F70087DDAD /* LoggerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerHelper.swift; sourceTree = "<group>"; };
+		A25250F42C05C7E1000D935F /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		A26492AB2BD6E8C400E3D91E /* SmartBagApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartBagApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A26492AE2BD6E8C400E3D91E /* SmartBagAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartBagAppApp.swift; sourceTree = "<group>"; };
+		A26492B02BD6E8C400E3D91E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A26492B22BD6E8C400E3D91E /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		A26492B42BD6E8C600E3D91E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A26492B72BD6E8C600E3D91E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A26492BD2BD6E8C600E3D91E /* SmartBagAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartBagAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A26492C12BD6E8C600E3D91E /* SmartBagAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartBagAppTests.swift; sourceTree = "<group>"; };
+		A26492C72BD6E8C600E3D91E /* SmartBagAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartBagAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A26492CB2BD6E8C600E3D91E /* SmartBagAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartBagAppUITests.swift; sourceTree = "<group>"; };
+		A26492CD2BD6E8C600E3D91E /* SmartBagAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartBagAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A26492DB2BD6EC5100E3D91E /* MedicationNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicationNameView.swift; sourceTree = "<group>"; };
+		A26492DD2BD6F43900E3D91E /* MedicationTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicationTypeView.swift; sourceTree = "<group>"; };
+		A26492DF2BD7036B00E3D91E /* MedicationStrengthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicationStrengthView.swift; sourceTree = "<group>"; };
+		A26492E12BD709D800E3D91E /* MedicationScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicationScheduleView.swift; sourceTree = "<group>"; };
+		A293186E2C59254900069251 /* MyMedicationsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMedicationsPresenter.swift; sourceTree = "<group>"; };
+		A2B0674C2BE7D50B00F4FC8A /* Medication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medication.swift; sourceTree = "<group>"; };
+		A2E9E4632C21108F00A94265 /* CocoaMQTT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CocoaMQTT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2E9E4642C21108F00A94265 /* MqttCocoaAsyncSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MqttCocoaAsyncSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2E9E4652C21108F00A94265 /* Pods_SmartBagApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_SmartBagApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2E9E4662C21108F00A94265 /* Pods_SmartBagApp_SmartBagAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_SmartBagApp_SmartBagAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2E9E4672C21108F00A94265 /* Pods_SmartBagAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_SmartBagAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B213ABC3F6379FB1C03CAB90 /* Pods-SmartBagApp-SmartBagAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartBagApp-SmartBagAppTests.debug.xcconfig"; path = "Target Support Files/Pods-SmartBagApp-SmartBagAppTests/Pods-SmartBagApp-SmartBagAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BD31D9DB678BF0C374D4F238 /* Pods-SmartBagApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartBagApp.debug.xcconfig"; path = "Target Support Files/Pods-SmartBagApp/Pods-SmartBagApp.debug.xcconfig"; sourceTree = "<group>"; };
+		C7327D8A7C351E632AD75D55 /* Pods-SmartBagApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartBagApp.release.xcconfig"; path = "Target Support Files/Pods-SmartBagApp/Pods-SmartBagApp.release.xcconfig"; sourceTree = "<group>"; };
+		D176AD8C9AD5D0459F046A9A /* Pods-SmartBagApp-SmartBagAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartBagApp-SmartBagAppTests.release.xcconfig"; path = "Target Support Files/Pods-SmartBagApp-SmartBagAppTests/Pods-SmartBagApp-SmartBagAppTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A26492A82BD6E8C400E3D91E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA58CC95B9786BF193BE3623 /* Pods_SmartBagApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A26492BA2BD6E8C600E3D91E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A26492C42BD6E8C600E3D91E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A20012C32C4D3ECA0091A255 /* Medications */ = {
+			isa = PBXGroup;
+			children = (
+				A20012C42C4D3ED30091A255 /* Scenes */,
+			);
+			path = Medications;
+			sourceTree = "<group>";
+		};
+		A20012C42C4D3ED30091A255 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				A20012D12C4DA6E60091A255 /* SetupMedication */,
+				A20012C62C4D3EEF0091A255 /* SmartBagStatus */,
+				A20012C52C4D3EDA0091A255 /* MyMedications */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		A20012C52C4D3EDA0091A255 /* MyMedications */ = {
+			isa = PBXGroup;
+			children = (
+				A20012C92C4D3F3D0091A255 /* MyMedicationsView.swift */,
+				A293186E2C59254900069251 /* MyMedicationsPresenter.swift */,
+			);
+			path = MyMedications;
+			sourceTree = "<group>";
+		};
+		A20012C62C4D3EEF0091A255 /* SmartBagStatus */ = {
+			isa = PBXGroup;
+			children = (
+				A20012CD2C4D44D60091A255 /* Models */,
+				A20012C72C4D3F2A0091A255 /* SmartBagStatusView.swift */,
+				A20012CB2C4D43E20091A255 /* SmartBagStatusPresenter.swift */,
+			);
+			path = SmartBagStatus;
+			sourceTree = "<group>";
+		};
+		A20012CD2C4D44D60091A255 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A20012CE2C4D44EA0091A255 /* SmartBagStatusViewModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A20012D12C4DA6E60091A255 /* SetupMedication */ = {
+			isa = PBXGroup;
+			children = (
+				A20012D22C4DA7000091A255 /* SetupMedicationView.swift */,
+				A20012D42C4DA7160091A255 /* SetupMedicationPresenter.swift */,
+			);
+			path = SetupMedication;
+			sourceTree = "<group>";
+		};
+		A2393ACC2C4410C50087DDAD /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				A2393ACD2C4410E00087DDAD /* MQTTBrokerManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		A2393ACF2C4412E90087DDAD /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+				A2393AD02C4412F70087DDAD /* LoggerHelper.swift */,
+			);
+			path = Logger;
+			sourceTree = "<group>";
+		};
+		A25250F62C05C95A000D935F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A2E9E4632C21108F00A94265 /* CocoaMQTT.framework */,
+				A2E9E4642C21108F00A94265 /* MqttCocoaAsyncSocket.framework */,
+				A2E9E4652C21108F00A94265 /* Pods_SmartBagApp.framework */,
+				A2E9E4662C21108F00A94265 /* Pods_SmartBagApp_SmartBagAppUITests.framework */,
+				A2E9E4672C21108F00A94265 /* Pods_SmartBagAppTests.framework */,
+				888297AAB3A6C6371698F670 /* Pods_SmartBagApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A26492A22BD6E8C400E3D91E = {
+			isa = PBXGroup;
+			children = (
+				A26492AD2BD6E8C400E3D91E /* SmartBagApp */,
+				A26492C02BD6E8C600E3D91E /* SmartBagAppTests */,
+				A26492CA2BD6E8C600E3D91E /* SmartBagAppUITests */,
+				A26492AC2BD6E8C400E3D91E /* Products */,
+				A25250F62C05C95A000D935F /* Frameworks */,
+				C2246400B460DC029B2B92FA /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		A26492AC2BD6E8C400E3D91E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A26492AB2BD6E8C400E3D91E /* SmartBagApp.app */,
+				A26492BD2BD6E8C600E3D91E /* SmartBagAppTests.xctest */,
+				A26492C72BD6E8C600E3D91E /* SmartBagAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A26492AD2BD6E8C400E3D91E /* SmartBagApp */ = {
+			isa = PBXGroup;
+			children = (
+				A20012C32C4D3ECA0091A255 /* Medications */,
+				A2389DA02C21028400B896C8 /* GoogleService-Info.plist */,
+				A2389D9F2C21021200B896C8 /* Info.plist */,
+				A2393ACF2C4412E90087DDAD /* Logger */,
+				A2393ACC2C4410C50087DDAD /* Managers */,
+				A26492DA2BD6EC3700E3D91E /* NewMedication */,
+				A26492AE2BD6E8C400E3D91E /* SmartBagAppApp.swift */,
+				A26492B02BD6E8C400E3D91E /* ContentView.swift */,
+				A26492B22BD6E8C400E3D91E /* Item.swift */,
+				A26492B42BD6E8C600E3D91E /* Assets.xcassets */,
+				A26492B62BD6E8C600E3D91E /* Preview Content */,
+				A25250F42C05C7E1000D935F /* Package.swift */,
+			);
+			path = SmartBagApp;
+			sourceTree = "<group>";
+		};
+		A26492B62BD6E8C600E3D91E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A26492B72BD6E8C600E3D91E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A26492C02BD6E8C600E3D91E /* SmartBagAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				A26492C12BD6E8C600E3D91E /* SmartBagAppTests.swift */,
+			);
+			path = SmartBagAppTests;
+			sourceTree = "<group>";
+		};
+		A26492CA2BD6E8C600E3D91E /* SmartBagAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A26492CB2BD6E8C600E3D91E /* SmartBagAppUITests.swift */,
+				A26492CD2BD6E8C600E3D91E /* SmartBagAppUITestsLaunchTests.swift */,
+			);
+			path = SmartBagAppUITests;
+			sourceTree = "<group>";
+		};
+		A26492DA2BD6EC3700E3D91E /* NewMedication */ = {
+			isa = PBXGroup;
+			children = (
+				A2B0674B2BE7D4FA00F4FC8A /* Model */,
+				A2B0674A2BE7D4E800F4FC8A /* Scenes */,
+			);
+			path = NewMedication;
+			sourceTree = "<group>";
+		};
+		A2B0674A2BE7D4E800F4FC8A /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				A26492DB2BD6EC5100E3D91E /* MedicationNameView.swift */,
+				A26492DD2BD6F43900E3D91E /* MedicationTypeView.swift */,
+				A26492DF2BD7036B00E3D91E /* MedicationStrengthView.swift */,
+				A26492E12BD709D800E3D91E /* MedicationScheduleView.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		A2B0674B2BE7D4FA00F4FC8A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A2B0674C2BE7D50B00F4FC8A /* Medication.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C2246400B460DC029B2B92FA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BD31D9DB678BF0C374D4F238 /* Pods-SmartBagApp.debug.xcconfig */,
+				C7327D8A7C351E632AD75D55 /* Pods-SmartBagApp.release.xcconfig */,
+				B213ABC3F6379FB1C03CAB90 /* Pods-SmartBagApp-SmartBagAppTests.debug.xcconfig */,
+				D176AD8C9AD5D0459F046A9A /* Pods-SmartBagApp-SmartBagAppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A26492AA2BD6E8C400E3D91E /* SmartBagApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A26492D12BD6E8C600E3D91E /* Build configuration list for PBXNativeTarget "SmartBagApp" */;
+			buildPhases = (
+				7F104A6743DF06C93C241AE2 /* [CP] Check Pods Manifest.lock */,
+				A26492A72BD6E8C400E3D91E /* Sources */,
+				A26492A82BD6E8C400E3D91E /* Frameworks */,
+				A26492A92BD6E8C400E3D91E /* Resources */,
+				3D4A0D95587625613902D61C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SmartBagApp;
+			packageProductDependencies = (
+			);
+			productName = SmartBagApp;
+			productReference = A26492AB2BD6E8C400E3D91E /* SmartBagApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A26492BC2BD6E8C600E3D91E /* SmartBagAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A26492D42BD6E8C600E3D91E /* Build configuration list for PBXNativeTarget "SmartBagAppTests" */;
+			buildPhases = (
+				A26492B92BD6E8C600E3D91E /* Sources */,
+				A26492BA2BD6E8C600E3D91E /* Frameworks */,
+				A26492BB2BD6E8C600E3D91E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A26492BF2BD6E8C600E3D91E /* PBXTargetDependency */,
+			);
+			name = SmartBagAppTests;
+			productName = SmartBagAppTests;
+			productReference = A26492BD2BD6E8C600E3D91E /* SmartBagAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A26492C62BD6E8C600E3D91E /* SmartBagAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A26492D72BD6E8C600E3D91E /* Build configuration list for PBXNativeTarget "SmartBagAppUITests" */;
+			buildPhases = (
+				A26492C32BD6E8C600E3D91E /* Sources */,
+				A26492C42BD6E8C600E3D91E /* Frameworks */,
+				A26492C52BD6E8C600E3D91E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A26492C92BD6E8C600E3D91E /* PBXTargetDependency */,
+			);
+			name = SmartBagAppUITests;
+			productName = SmartBagAppUITests;
+			productReference = A26492C72BD6E8C600E3D91E /* SmartBagAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A26492A32BD6E8C400E3D91E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					A26492AA2BD6E8C400E3D91E = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					A26492BC2BD6E8C600E3D91E = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = A26492AA2BD6E8C400E3D91E;
+					};
+					A26492C62BD6E8C600E3D91E = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = A26492AA2BD6E8C400E3D91E;
+					};
+				};
+			};
+			buildConfigurationList = A26492A62BD6E8C400E3D91E /* Build configuration list for PBXProject "SmartBagApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A26492A22BD6E8C400E3D91E;
+			packageReferences = (
+			);
+			productRefGroup = A26492AC2BD6E8C400E3D91E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A26492AA2BD6E8C400E3D91E /* SmartBagApp */,
+				A26492BC2BD6E8C600E3D91E /* SmartBagAppTests */,
+				A26492C62BD6E8C600E3D91E /* SmartBagAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A26492A92BD6E8C400E3D91E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A26492B82BD6E8C600E3D91E /* Preview Assets.xcassets in Resources */,
+				A2389DA12C21028400B896C8 /* GoogleService-Info.plist in Resources */,
+				A26492B52BD6E8C600E3D91E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A26492BB2BD6E8C600E3D91E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A26492C52BD6E8C600E3D91E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3D4A0D95587625613902D61C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SmartBagApp/Pods-SmartBagApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SmartBagApp/Pods-SmartBagApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SmartBagApp/Pods-SmartBagApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7F104A6743DF06C93C241AE2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SmartBagApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A26492A72BD6E8C400E3D91E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A20012D52C4DA7160091A255 /* SetupMedicationPresenter.swift in Sources */,
+				A2B0674D2BE7D50B00F4FC8A /* Medication.swift in Sources */,
+				A26492DC2BD6EC5100E3D91E /* MedicationNameView.swift in Sources */,
+				A26492B12BD6E8C400E3D91E /* ContentView.swift in Sources */,
+				A20012C82C4D3F2A0091A255 /* SmartBagStatusView.swift in Sources */,
+				A25250F52C05C7E1000D935F /* Package.swift in Sources */,
+				A2393ACE2C4410E00087DDAD /* MQTTBrokerManager.swift in Sources */,
+				A26492B32BD6E8C400E3D91E /* Item.swift in Sources */,
+				A20012CC2C4D43E20091A255 /* SmartBagStatusPresenter.swift in Sources */,
+				A26492E02BD7036B00E3D91E /* MedicationStrengthView.swift in Sources */,
+				A20012CA2C4D3F3D0091A255 /* MyMedicationsView.swift in Sources */,
+				A293186F2C59254900069251 /* MyMedicationsPresenter.swift in Sources */,
+				A26492AF2BD6E8C400E3D91E /* SmartBagAppApp.swift in Sources */,
+				A2393AD12C4412F70087DDAD /* LoggerHelper.swift in Sources */,
+				A26492E22BD709D800E3D91E /* MedicationScheduleView.swift in Sources */,
+				A20012D32C4DA7000091A255 /* SetupMedicationView.swift in Sources */,
+				A26492DE2BD6F43900E3D91E /* MedicationTypeView.swift in Sources */,
+				A20012CF2C4D44EA0091A255 /* SmartBagStatusViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A26492B92BD6E8C600E3D91E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A26492C22BD6E8C600E3D91E /* SmartBagAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A26492C32BD6E8C600E3D91E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A26492CC2BD6E8C600E3D91E /* SmartBagAppUITests.swift in Sources */,
+				A26492CE2BD6E8C600E3D91E /* SmartBagAppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A26492BF2BD6E8C600E3D91E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A26492AA2BD6E8C400E3D91E /* SmartBagApp */;
+			targetProxy = A26492BE2BD6E8C600E3D91E /* PBXContainerItemProxy */;
+		};
+		A26492C92BD6E8C600E3D91E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A26492AA2BD6E8C400E3D91E /* SmartBagApp */;
+			targetProxy = A26492C82BD6E8C600E3D91E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A26492CF2BD6E8C600E3D91E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A26492D02BD6E8C600E3D91E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A26492D22BD6E8C600E3D91E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD31D9DB678BF0C374D4F238 /* Pods-SmartBagApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SmartBagApp/Preview Content\"";
+				DEVELOPMENT_TEAM = D56NG2Q3UR;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SmartBagApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = josejoao.SmartBagApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A26492D32BD6E8C600E3D91E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7327D8A7C351E632AD75D55 /* Pods-SmartBagApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SmartBagApp/Preview Content\"";
+				DEVELOPMENT_TEAM = D56NG2Q3UR;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SmartBagApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = josejoao.SmartBagApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A26492D52BD6E8C600E3D91E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D56NG2Q3UR;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = josejoao.SmartBagAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartBagApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SmartBagApp";
+			};
+			name = Debug;
+		};
+		A26492D62BD6E8C600E3D91E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D56NG2Q3UR;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = josejoao.SmartBagAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartBagApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SmartBagApp";
+			};
+			name = Release;
+		};
+		A26492D82BD6E8C600E3D91E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D56NG2Q3UR;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = josejoao.SmartBagAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SmartBagApp;
+			};
+			name = Debug;
+		};
+		A26492D92BD6E8C600E3D91E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D56NG2Q3UR;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = josejoao.SmartBagAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SmartBagApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A26492A62BD6E8C400E3D91E /* Build configuration list for PBXProject "SmartBagApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A26492CF2BD6E8C600E3D91E /* Debug */,
+				A26492D02BD6E8C600E3D91E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A26492D12BD6E8C600E3D91E /* Build configuration list for PBXNativeTarget "SmartBagApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A26492D22BD6E8C600E3D91E /* Debug */,
+				A26492D32BD6E8C600E3D91E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A26492D42BD6E8C600E3D91E /* Build configuration list for PBXNativeTarget "SmartBagAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A26492D52BD6E8C600E3D91E /* Debug */,
+				A26492D62BD6E8C600E3D91E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A26492D72BD6E8C600E3D91E /* Build configuration list for PBXNativeTarget "SmartBagAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A26492D82BD6E8C600E3D91E /* Debug */,
+				A26492D92BD6E8C600E3D91E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A26492A32BD6E8C400E3D91E /* Project object */;
+}
